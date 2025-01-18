@@ -10,7 +10,6 @@ const NaverLogin = () => {
     }
 
     const naverLogin = new window.naver.LoginWithNaverId({
-      clientId: "ihMtMJ7P6hIzbDg0jKBg",
       callbackUrl: "http://localhost:3000/naverLogin", 
       isPopup: false,
       loginButton: { color: "green", type: 3, height: "48" }, 
