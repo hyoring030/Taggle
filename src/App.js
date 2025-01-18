@@ -1,14 +1,18 @@
+import { Mainpage } from "./page/Mainpage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NaverLogin from "./page/NaverLogin";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          ㅋㅋ
-        </p>
+    <Router>
+      <Routes>
+        <Route path="/" element={<NaverLogin />} />
+        <Route path="/naverLogin" element={<Mainpage />} />
 
-      </header>
-    </div>
+      </Routes>
+    </Router>
   );
 }
 
